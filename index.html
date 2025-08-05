@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> PlayBoy Real Name Generator</title>
+</head>
+<body>
+
+  <h2> Only Play Boy Wife Name Generator</h2>
+
+  <label for="husbandName">Enter Correct Play Boy Full Name:</label>
+  <input type="text" id="husbandName" placeholder=" ">
+  <button onclick="generateWifeName()">Get Wife Name</button>
+
+  <p id="wifeNameResult"></p>
+
+  <script>
+    function generateWifeName() {
+      const input = document.getElementById("husbandName").value.trim().toLowerCase();
+
+      if (input === "yash wankhede") {
+        document.getElementById("wifeNameResult").innerText = "Wife's Name: Hmm Patil";
+      } else {
+        document.getElementById("wifeNameResult").innerText = "No wife name available for this person.";
+      }
+    }
+  </script>
+
+</body>
+</html>
