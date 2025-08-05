@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PlayBoy Real Name Generator</title>
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      text-align: center;
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    input[type="text"] {
+      width: 300px;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 24px;
+      margin-bottom: 20px;
+      outline: none;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      color: white;
+      background-color: #4285f4;
+      border: none;
+      border-radius: 24px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #357ae8;
+    }
+
+    #wifeNameResult {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #202124;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Only Play Boy Wife Name Generator</h2>
+
+    <label for="husbandName">Enter Correct Play Boy Full Name:</label><br><br>
+    <input type="text" id="husbandName" placeholder="e.g. yash wankhede"><br>
+    <button onclick="generateWifeName()">Get Wife Name</button>
+
+    <p id="wifeNameResult"></p>
+  </div>
+
+  <script>
+    function generateWifeName() {
+      const input = document.getElementById("husbandName").value.trim().toLowerCase();
+
+      if (input === "yash wankhede") {
+        document.getElementById("wifeNameResult").innerText = "Wife's Name: Hmm Patil";
+      } else if (input === "nakul patil") {
+        document.getElementById("wifeNameResult").innerText = "Wife's Name: TondMaru";
+      } else {
+        document.getElementById("wifeNameResult").innerText = "No wife name available for this person.";
+      }
+    }
+  </script>
+
+</body>
+</html>
